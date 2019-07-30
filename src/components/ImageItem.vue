@@ -1,22 +1,22 @@
 <template>
-  <div id="Items">
-
+  <div id="ImageItem">
+      
   </div>
 </template>
 
 <script>
-import Item from './Item';
+
 export default {
-  name: 'Items',
+  name: 'ImageItem',
   components: {
-    Item
+    
   },
-  props: ["images"]
+  props: ["image"]
 }
 </script>
 
 <style>
-#items {
+#ImageItem {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 </style>

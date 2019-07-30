@@ -1,18 +1,19 @@
 /* eslint-disable */
 <template>
   <div id="app">
-    <Items></Items>
+    <h1>art gallery</h1>
+    <Images></Images>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import Items from './components/Items';
+import Images from './components/Images';
 import {API_KEY} from './config';
 export default {
   name: 'app',
   components: {
-    Items
+    Images
   },
   data() {
     return {
