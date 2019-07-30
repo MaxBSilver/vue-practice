@@ -1,15 +1,18 @@
+/* eslint-disable */
 <template>
   <div id="app">
+    <Items></Items>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import axios from 'axios';
-
+import Items from './components/Items';
+import {API_KEY} from './config';
 export default {
   name: 'app',
   components: {
+    Items
   },
   data() {
     return {
@@ -17,11 +20,12 @@ export default {
     }
   },
   methods: {
-    created() {
-    axios.get(`https://api.harvardartmuseums.org/image/?apikey=${}`)
-      .then(res => this.images = res.data)
+   
+  },
+   created() {
+    axios.get(`https://api.harvardartmuseums.org/image/?apikey=${API_KEY}`)
+      .then(res => this.images=res.data.records)
       .catch(err => console.log(err));
-  }
   }
 }
 </script>
