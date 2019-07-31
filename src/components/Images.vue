@@ -10,15 +10,19 @@
 import ImageItem from './ImageItem';
 export default {
   name: 'Images',
+   props: ["images"],
   components: {
     ImageItem
-  },
-  props: ["images"]
+  }
 }
 </script>
 
 <style>
 #Images {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-around
 }
 </style>
