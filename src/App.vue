@@ -23,7 +23,7 @@ export default {
   },
 
    created() {
-    axios.get(`https://api.harvardartmuseums.org/image/?apikey=${API_KEY}`)
+    axios.get(`https://api.harvardartmuseums.org/image/?apikey=b8d0bf00-b304-11e9-870c-63b3864eb9ca`)
       .then(res => this.images=res.data.records)
   }
 }
@@ -42,7 +42,7 @@ export default {
 }
 h1 {
   color :#41b883;
-  border-bottom: 1px solid #34495e;
+  border-bottom: 3px solid #34495e;
   margin: 0 auto;
   padding: 10px;
 }
